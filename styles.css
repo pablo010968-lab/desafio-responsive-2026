@@ -1,0 +1,132 @@
+/*CELULAR*/
+
+
+body {
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+header {
+    margin-top: 20px;
+    padding: 25px;
+    background-color: #0ddba8;
+    border: 1px solid black;
+    border-radius: 20px;
+    font-size: 1.2em;
+    font-family: cursive;
+    color: white;
+}
+
+
+
+.hamburguesa {
+        display: block;
+        font-size: 30px;
+        cursor: pointer;
+    }
+nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: end;
+    gap: 10px;
+    list-style: none;
+}
+#menu-toggle:checked ~ ul {
+        display: flex;
+    }
+nav li {
+    margin: 8px;
+}
+
+article {
+    background-color: #0ddba8;
+    width: 100%;
+    border-radius: 20px;
+}
+
+h2 {
+    color: white;
+    text-align: center;
+    font-size: 1.5em;
+}
+
+img {
+    width: 90%;
+    margin: 5%;
+    border-radius: 50px;
+}
+
+p {
+    background-color: #8f3cce;
+    width: 92%;
+    margin: 2%;
+    color: white;
+    padding: 5px;
+    font-size: 1.2em;
+    font-family: cursive;
+    border-radius: 10px;
+
+}
+
+button {
+    color: white;
+    background-color: #580695;
+    border-color: #580695;
+    padding: 2% 4%;
+    border-radius: 50px;
+    margin: 4% 35%;
+}
+
+footer {
+    min-height: 110px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+footer p {
+    margin: 0;
+    font-size: 1.2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/*TABLET*/
+@media(min-width: 720px) {
+    nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.hamburguesa {
+    display: none;
+}
+    article {
+        width: 46%;
+        float: left;
+        margin: 2%;
+    }
+    nav ul{flex-direction: row;}
+}
+
+/*ESCRITORIO*/
+@media(min-width: 1020px) {
+    article {
+        width: 21%;
+    }
+    nav ul{flex-direction: row;}
+
+}
